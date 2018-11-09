@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+#section li{
+	list-style:none;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:15px;
+	margin-top:5px;
+	border: 2px #333333 solid;
+	border-radius: 15px;
+	
+}
+
+#acharol{
+	background:url(../images/acharoladas/acharoladas_small.jpg) no-repeat center right;
+}
+
+#microperf{
+	background:url(../images/microperforadas/microperforadas.jpg) no-repeat center right;
+}
+
+#section li:hover{
+	border:2px #390 solid;
+	padding-top:30px;
+	padding-bottom:30px;
+}

@@ -1,0 +1,44 @@
+@keyframes fadeIn{
+    from{opacity:0.3;}
+    to{opacity: 1;}
+}
+
+@keyframes fadeOut{
+    from{opacity:1;}
+    to{opacity: 0.3;}
+}
+
+#images{
+    position: relative;
+    margin:auto;
+    width:1000px;
+    height: 300px;
+}
+
+#left{
+    position: absolute;
+    left:0px;
+    top:110px;
+}
+
+#right{
+    position: absolute;
+    right:0px;
+    top:110px;
+}
+
+#left, #novedades, #right{
+    display: inline;
+}
+
+#left, #right{
+    opacity: 0.3;
+    cursor:pointer;
+    animation: "fadeOut" 0.1s;
+}
+
+#left:hover, #right:hover{
+    opacity: 1;
+    animation: "fadeIn" 0.1s;
+}
+

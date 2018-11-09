@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TECNOCEL - Accesorios para telefonía celular</title>
+<link rel="stylesheet" href="styles/mainstyle.css" type="text/css" />
+<link rel="stylesheet" href="styles/acharoladas.css" type="text/css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("#vistas img").click(cambiar_vista);
+	$("#colores img").click(cambiar_color);
+});
+
+function cambiar_vista(e){
+	var source;
+	if (e.target==front){
+		source=$("#vistas #front").attr("src");	
+	}
+	else if (e.target==main){
+		source=$("#vistas #main").attr("src");	
+	}
+	else if(e.target==bck){
+		source=$("#vistas #bck").attr("src");		
+	}
+	else if(e.target==pers){
+		source=$("#vistas #pers").attr("src");	
+	}
+	$("#viendo img").attr("src",source);
+}
+
+function cambiar_color(e){
+	if (e.target==color1){
+		$("#vistas #main").attr("src","images/acharoladas/black_main.png");
+		$("#vistas #front").attr("src","images/acharoladas/black_front.png");
+		$("#vistas #bck").attr("src","images/acharoladas/black_back.png");
+		$("#vistas #pers").attr("src","images/acharoladas/black_pers.png");
+	}else if(e.target==color2){
+		$("#vistas #main").attr("src","images/acharoladas/golden_main.png");
+		$("#vistas #front").attr("src","images/acharoladas/golden_front.png");
+		$("#vistas #bck").attr("src","images/acharoladas/golden_back.png");
+		$("#vistas #pers").attr("src","images/acharoladas/golden_pers.png");
+	}else if(e.target==color3){
+		$("#vistas #main").attr("src","images/acharoladas/gp_main.png");
+		$("#vistas #front").attr("src","images/acharoladas/gp_front.png");
+		$("#vistas #bck").attr("src","images/acharoladas/gp_back.png");
+		$("#vistas #pers").attr("src","images/acharoladas/gp_pers.png");
+	}else if(e.target==color4){
+		$("#vistas #main").attr("src","images/acharoladas/silv_main.png");
+		$("#vistas #front").attr("src","images/acharoladas/silv_front.png");
+		$("#vistas #bck").attr("src","images/acharoladas/silv_back.png");
+		$("#vistas #pers").attr("src","images/acharoladas/silv_pers.png");
+	}else if(e.target==color5){
+		$("#vistas #main").attr("src","images/acharoladas/red_main.png");
+		$("#vistas #front").attr("src","images/acharoladas/red_front.png");
+		$("#vistas #bck").attr("src","images/acharoladas/red_back.png");
+		$("#vistas #pers").attr("src","images/acharoladas/red_pers.png");
+	}else if(e.target==color6){
+	$("#vistas #main").attr("src","images/acharoladas/vio_main.png");
+		$("#vistas #front").attr("src","images/acharoladas/vio_front.png");
+		$("#vistas #bck").attr("src","images/acharoladas/vio_back.png");
+		$("#vistas #pers").attr("src","images/acharoladas/vio_pers.png");
+	}
+}
+
+</script>
+</head>
+
+<body id="cuerpo">
+	<div id="banner">
+		<img src="images/logo.png" width="97%" height="97%"/>
+	</div>
+    <div id="bar">
+    	<ul>
+        	<a href="index.html"><li id="begin">INICIO</li></a>
+            <a href="catalog.html"><li>CAT&Aacute;LOGO</li></a>
+            <a href="weare.html"><li>QUIENES SOMOS</li></a>
+            <a href="contact.html"><li id="end" >CONTACTO</li></a>
+        </ul>
+    </div>
+    <div id="section">
+    	<div id="ruta"><a href="agendas.html">AGENDAS</a>  &raquo; ACHAROLADAS</div>
+        <div id="imagenes">
+            <div id="viendo">
+                <h3>PRESENTACI&Oacute;N</h3>
+                <p>Imagen del artículo.</p><br/>
+                <img src="images/acharoladas/black_main.png"/>
+            </div>
+            <div id="vistas">
+                <h3>VISTAS</h3>
+                <p>Seleccione una vista.</p><br/>
+                <img id="main" src="images/acharoladas/black_main.png"/>
+                <img id="front" src="images/acharoladas/black_front.png"/>
+                <img id="bck" src="images/acharoladas/black_back.png"/>
+                <img id="pers" src="images/acharoladas/black_pers.png"/>
+            </div>
+            <div id="colores">
+                <h3>COLORES</h3>
+                <p>Colores disponibles.</p><br/>
+                <img id="color1" src="images/acharoladas/black_small.png"/>
+                <img id="color2" src="images/acharoladas/golden_small.png"/>
+                <img id="color3" src="images/acharoladas/gp_small.png"/>
+                <img id="color4" src="images/acharoladas/silv_small.png"/>
+                <img id="color5" src="images/acharoladas/red_small.png"/>
+                <img id="color6" src="images/acharoladas/vio_small.png"/>
+            </div>
+        </div>
+        <div id="modelos"><br/>
+            <h1>MODELOS DISPONIBLES</h1>
+            <table class="marca">
+                <!--<th>SAMSUNG</th>-->
+                <tr class="samsung"><td>J2 PRIME</td><!--<td>SI</td>--></tr>
+                <tr class="samsung"><td>J5 PRIME</td><!--<td>NO</td>--></tr>
+                <tr class="samsung"><td>J7 PRIME</td><!--<td>NO</td>--></tr>
+                <tr class="motorola"><td>MOTO G5</td></tr>
+                <tr class="motorola"><td>MOTO G5 PLUS</td></tr>
+            </table>
+            <table class="marca">
+                <tr class="apple"><td>IPHONE 7</td></tr>
+                <tr class="apple"><td>IPHONE 7 PLUS</td></tr>
+            </table>
+            <!--<table class="marca" id="iphone">
+            </table>-->
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*-------------------------------------------------------------------------------------------------------fonts----------*/
+
+@font-face{
+	font-family:"Roboto-Thin";
+	src:local("Roboto-Thin"),
+	url("../fonts/Roboto-Thin.ttf");
+}
+
+@font-face{
+	font-family:"CaviarDreams";
+	src:local("CaviarDreams"),
+	url("../fonts/CaviarDreams.ttf");
+}
+
+@font-face{
+
+	font-family:"MeganJune";
+	src:local("MeganJune"),
+	url("../fonts/MeganJune.otf");
+
+}
+
+/*-------------------------------------------------------------------------------------------etiquetas---*/
+
+html,body,header,section,h1,h2,h3,h4,h5,h6,img,p{
+	margin:0;
+	padding:0;
+	font-weight:normal;
+}
+
+body{
+    background-color: #fff;
+}
+
+footer{
+    font-size:10px;
+}
+
+span{
+    text-align: center;                              /*center*/
+}
+
+/*------------------------------------------------------------------------------------fin de etiquetas---*/
+/*********************************************************************************************************/
+
+/*------------------------------------------------------------------------------------------HEADER------*/
+
+    header #banner{
+        margin-top:20px;
+        margin-left:60px;
+    }
+
+/*------------------------------------------------------------------------------------.END SECTION------*/
+
+/*********************************************************************************************************/
+/*--------------------------------------------------------------------------------------SECTION----------*/
+
+section{
+    clear: both;
+    position: relative;
+    font-family: "CaviarDreams";
+    color:#10069f;
+    margin: 65px 50px 10px 50px;
+    padding: 15px;
+}
+
+/*---------------------------------------------------------------------------------FIN DE SECTION---------*/
+/*********************************************************************************************************/
+/*------------------------------------------------------------------------------------------BAR NAV-----*/
+
+    #bar{	
+        font-size:20px;
+        font-family: "Roboto-thin";
+        margin-left:150px;
+    }
+
+        #bar ul{
+            
+            color:#fff;
+            margin-left:70px;
+            list-style: none;
+        }	
+
+
+        #bar li{
+            width:200px;
+            float:left;
+            text-align:center;
+            background-color:#362cbf;
+            padding:3px 0px 3px 0px;
+            color:#fff;	
+        }
+
+        #bar li:hover{
+            background-color:#84BD00;
+        }
+	
+	#begin{
+		border-radius:15px 0 0 15px;
+	}
+
+	#end{
+		border-radius:0 15px 15px 0;
+	}
+
+
+/*-------------------------------------------------------------------------------------END NAV---------*/
+/*******************************************************************************************************/
+/*----------------------------------------------------------------------------------------FOOTER-------*/
+
+footer{
+    border-top: 1px solid #ccc;
+    clear: both;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding:5px 10px 10px 20px;
+    color:rgb(182, 179, 179);
+}
+
+/*-----------------------------------------------------------------------------------END  FOOTER-------*/

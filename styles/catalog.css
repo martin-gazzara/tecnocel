@@ -1,0 +1,45 @@
+#catalog{
+    width: 1000px;
+    margin:auto;
+}
+
+    #catalog img{
+        border:1px solid black;
+        border-radius: 15px;
+    }
+
+    #catalog img:hover{
+		transform:scale(1.2,1.2);
+        transition:transform 0.2s;
+        cursor:pointer;
+    }
+/*----------------------------------------------------------------------------------------Catalogo-----*/    
+.show{
+    transform: translate(0,0);
+    opacity: 1;
+    transition: all 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.hide{
+    transform: translate(-2000px,0);
+    opacity: 0;
+    transition: all 0.5s;
+    transition-timing-function: ease-in;
+}
+
+/*-------------------------------------------------------------------------------------Modelos----------*/
+
+#volver{
+    background-color: #362cbf;
+    color:#fff;
+    font-size: 18px;
+    font-family: "CaviarDreams";
+    border:none;
+    border-radius:10px;
+}
+
+    #volver:hover{
+        background-color: #84BD00;
+        cursor: pointer;
+    }

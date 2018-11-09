@@ -1,0 +1,90 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>TECNOCEL - Accesorios para telefon&iacute;a celular</title>
+		<link rel="stylesheet" href="styles/main.css" type="text/css" />
+		<link rel="stylesheet" href="styles/contact.css" type="text/css" />
+		<link rel="icon" href="images/logos/icon.png" type="img/png"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+
+		<!--header-->
+
+		<header>
+
+			<div id="banner">
+
+				<img src="images/logo.png" width="1280px"/>
+			
+			</div>
+
+			<div id="bar">
+					
+				<ul>
+					<a href="index.html"><li id="begin" onclick="select_start()">INICIO</li></a>
+					<a href="catalog.html"><li>CAT&Aacute;LOGO</li></a>
+					<a href="company.html"><li>EMPRESA</li></a>
+					<a href="contact.html"><li id="end" >CONTACTO</li></a>
+				</ul>
+
+			</div>
+
+		</header>
+
+		<!--section-->
+
+		<section>
+			
+			<div id="mapa">
+
+				<h2>Dónde estamos</h2><br/>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2223.2802249535434!2d-57.56262418849137!3d-37.995957406850636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584deace5b43427%3A0xf34d00eff5c7b01d!2sDorrego+2043%2C+B7600CMO+Mar+del+Plata%2C+Buenos+Aires!5e0!3m2!1ses!2sar!4v1532788514404" width="200" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+				
+			</div> 
+
+			<div id="contacto">
+    		
+				<p id="wsp">2235473289</p><br/>
+				<p id="telefono">0223-4941379</p><br/>
+				<p id="correo">info@tecnocel.com.ar</p>
+					
+			</div> 
+
+			<div id="form">
+					<form id="contact_form" action="contact.php" method="post" name="contact_form">
+						<ul>
+							<li>
+								<label for="name">Nombre y apellido:</label><br>
+								<input type="text" name="nombre" id="nombre" cols="50" required class="required">
+							</li>
+							<li>
+								<label for="email">Email:</label><br>
+								<input type="email" name="mailu" id="mailu" cols="50" required placeholder="nombre@negocio.com" class="required email">
+							</li>
+							<li>
+								<label for="message">Mensaje:</label><br>
+								<textarea name="mensaje" id="mensaje" cols="50" rows="6" required  class="required"></textarea>
+							</li>
+							<li>
+								<button type=submit id="button">Enviar Consulta</button>
+							</li>
+						</ul>
+					</form>
+				</div>
+
+		</section>
+
+		<!--footer-->
+
+		<footer>
+			<span><p>Todos los derechos reservados &copy; 2018</p></span>
+			<p>Dorrego 2043, Mar del Plata, Buenos Aires, Argentina</p>
+			<p>+542234941379</p>
+			<p>www.tecnocel.com.ar</p>
+		</footer>
+		
+	</body>
+</html>
