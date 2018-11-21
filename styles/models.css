@@ -1,0 +1,20 @@
+section li{
+    list-style: none;
+    background-color: #fff;
+    border: 2px solid #84BD00;
+    border-radius:10px;
+    font-size: 20px;
+    width: 90%;
+    padding: 10px;
+    margin:5px;
+}
+
+    section li:hover{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        transition: all 0.5s;
+    }
+
+#acharol{
+    background:url(../images/acharoladas/acharoladas_small.jpg) no-repeat center right;
+}
