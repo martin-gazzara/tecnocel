@@ -6,6 +6,8 @@
 		<link rel="stylesheet" href="styles/main.css" type="text/css" />
 		<link rel="stylesheet" href="styles/models.css" type="text/css" />
 		<link rel="icon" href="images/logos/icon.png" type="img/png"/>
+
+		<link rel="stylesheet" href="venobox/venobox.css" type="text/css" media="screen" />
 		
 	</head>
 	
@@ -37,27 +39,43 @@
 		</header> <!--en of header-->
 
 		<!--section-->
-
+	
 		<section>
 			<ul>
-				<li id="acharol">uno</li>
-				<li>dos</li>
-				<li>tres</li>
-				<li>cuatro</li>
+				<a class="venobox" data-gall="acharoladas" href="images/acharoladas/black_main.png"><li id="acharoladas" class="modelo">Acharoladas</li></a>
+				<li id="microperforada" class="modelo">Microperforadas</li>
+				<li class="modelo">tres</li>
+				<li class="modelo">cuatro</li>
 			</ul>
 		</section> <!--end of section-->
-
-		<script>
-
-		</script>
+		
 		<!--footer-->
-
+		
 		<footer>
 			<span><p>Todos los derechos reservados &copy; 2018</p></span>
 			<p>Dorrego 2043, Mar del Plata, Buenos Aires, Argentina</p>
 			<p>+542234941379</p>
 			<p>www.tecnocel.com.ar</p>
 		</footer> <!--end of footer-->
+
+
+
+		<div id="imagenes-galeria">
+			
+			<!--ACHAROLADAS-->
+			<a class="venobox" data-gall="acharoladas" href="images/acharoladas/black_pers.png"><img width="0" src="images/acharoladas/black_pers.png"/></a>
+			<a class="venobox" data-gall="acharoladas" href="images/acharoladas/black_back.png"><img width="0" src="images/acharoladas/black_pers.png"/></a>
+			<a class="venobox" data-gall="acharoladas" href="images/acharoladas/black_front.png"><img width="0" src="images/acharoladas/black_pers.png"/></a>
+
+		</div>
 		
+
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="venobox/venobox.min.js"></script>
+		<script src="scripts/models.js"></script>		
+		<script>
+			$('.venobox').venobox();
+		</script>
 	</body>
 </html>
