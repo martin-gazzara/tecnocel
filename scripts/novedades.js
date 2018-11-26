@@ -3,8 +3,8 @@ let index = 0;
 
 
 const img = [
-    "images/test/1.jpg",
-    "images/test/2.jpg"
+    "images/novedades/auriculares-bluetooth.jpg",
+    "images/novedades/2.jpg"
 ],
  
       l_button = document.getElementById("left"),
