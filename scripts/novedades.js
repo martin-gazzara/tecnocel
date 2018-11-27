@@ -4,7 +4,9 @@ let index = 0;
 
 const img = [
     "images/novedades/auriculares-bluetooth.jpg",
-    "images/novedades/2.jpg"
+    "images/novedades/cases-diseno.jpg",
+    "images/novedades/manos-libres.jpg",
+    "images/novedades/soportes.jpg"
 ],
  
       l_button = document.getElementById("left"),
