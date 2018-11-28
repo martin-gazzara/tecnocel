@@ -6,7 +6,8 @@ const img = [
     "images/novedades/auriculares-bluetooth.jpg",
     "images/novedades/cases-diseno.jpg",
     "images/novedades/manos-libres.jpg",
-    "images/novedades/soportes.jpg"
+    "images/novedades/soportes.jpg",
+    "images/novedades/agendas-diseno.jpg"
 ],
  
       l_button = document.getElementById("left"),
